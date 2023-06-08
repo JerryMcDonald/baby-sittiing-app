@@ -1,13 +1,13 @@
 import React from 'react';
 
-function PageTwo() {
+function Calendar() {
   return (
     <div className="admin">
       <div className="content__main">
-        <h2>This is Page Two</h2>
+        <h2>This is The Calendar Page</h2>
       </div>
     </div>
   );
 }
 
-export default PageTwo;
+export default Calendar;

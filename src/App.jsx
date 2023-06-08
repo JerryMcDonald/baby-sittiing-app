@@ -2,8 +2,8 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 
 import Home from './pages/Home/Home.jsx';
-import PageOne from './pages/PageOne/PageOne.jsx';
-import PageTwo from './pages/PageTwo/PageTwo.jsx';
+import Calendar from './pages/Calendar/Calendar.jsx';
+import Request from './pages/Request/Request.jsx';
 import Navigation from './components/Navigation/Navigation.jsx';
 
 function App() {
@@ -14,8 +14,8 @@ function App() {
         <div className="content" style={{ marginTop: '64px' }}>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/pageone" element={<PageOne />} />
-            <Route path="/pagetwo" element={<PageTwo />} />
+            <Route path="/calendar" element={<Calendar />} />
+            <Route path="/request" element={<Request />} />
           </Routes>
         </div>
       </div>

@@ -22,8 +22,8 @@ const drawerWidth = 240;
 // Define navigation links
 const navItems = [
   { label: 'Home', path: '/' },
-  { label: 'Page One', path: '/pageone' },
-  { label: 'Page Two', path: '/pagetwo' },
+  { label: 'Calendar', path: '/calendar' },
+  { label: 'Request Sitting', path: '/request' },
 ];
 
 function Navigation(props) {
@@ -46,7 +46,7 @@ function Navigation(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        DXC
+        Menu
       </Typography>
       <Divider />
       <List>
@@ -72,7 +72,7 @@ function Navigation(props) {
   return (
     <Box sx={{ display: 'flex' }}>
       <CssBaseline />
-      <AppBar component="nav" sx={{ bgcolor: '#5f249f' }}>
+      <AppBar component="nav" sx={{ bgcolor: '#025d93' }}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -88,9 +88,9 @@ function Navigation(props) {
             component="div"
             sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            DXC
+            Baby Sitting
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', sm: 'flex' }, justifyContent: 'center' }}>
             {navItems.map(({ label, path }) => renderNavLink(label, path))}
           </Box>
         </Toolbar>
